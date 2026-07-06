@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Spiral Codes — Reduza a latência entre operação e decisão</title>
+<meta name="description" content="Mapeamos onde o tempo entre evento físico e registro financeiro vira custo não faturado em portos, ferrovias e centros de distribuição.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='16' fill='%230A1931'/%3E%3Ctext x='50' y='68' font-family='Arial,Helvetica,sans-serif' font-size='52' font-weight='600' text-anchor='middle' fill='white'%3ES%3C/text%3E%3C/svg%3E">
+<meta property="og:title" content="Spiral Codes — Reduza a latência entre operação e decisão">
+<meta property="og:description" content="Mapeamos onde o tempo entre evento físico e registro financeiro vira custo não faturado em portos, ferrovias e centros de distribuição.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://spiralcodes.com.br">
+<meta property="og:locale" content="pt_BR">
+<meta name="theme-color" content="#0A1931">
+<style>
+:root{--navy:#0A1931;--gray:#475569;--muted:#64748b;--border:#e5e7eb;--bg:#f8fafc}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background:#fff;color:var(--gray);line-height:1.6;font-size:17px}
+h1,h2,h3{color:var(--navy);line-height:1.15;font-weight:650;letter-spacing:-.01em;margin:0 0 16px}
+h1{font-size:clamp(34px,5vw,52px);margin-bottom:20px}
+h2{font-size:clamp(26px,3.2vw,36px)}
+h3{font-size:19px;margin-bottom:8px}
+p{margin:0 0 16px}
+a{text-decoration:none;color:inherit}
+.container{max-width:960px;margin:0 auto;padding:0 24px}
+header{border-bottom:1px solid var(--border);padding:20px 0}
+.header-inner{display:flex;justify-content:space-between;align-items:center;gap:16px}
+.logo{color:var(--navy);font-weight:650;font-size:17px;letter-spacing:-.01em}
+.nav-link{font-size:14px;color:var(--muted)}
+section{padding:80px 0;border-bottom:1px solid var(--border)}
+.hero{padding:96px 0 88px}
+.hero .sub{font-size:20px;max-width:700px;color:var(--gray);margin:0 0 32px}
+.btn{display:inline-block;background:var(--navy);color:#fff;padding:14px 22px;border-radius:8px;font-weight:550;font-size:16px}
+.problema-text{font-size:20px;max-width:760px;line-height:1.7}
+.steps{display:grid;grid-template-columns:repeat(2,1fr);gap:40px 48px;margin-top:32px}
+.step-icon{width:36px;height:36px;color:var(--navy);margin-bottom:14px}
+.step p{color:var(--gray);font-size:16px;margin:0}
+.benefits{list-style:none;padding:0;margin:28px 0 0;display:grid;grid-template-columns:repeat(2,1fr);gap:18px 32px}
+.benefits li{position:relative;padding-left:20px;color:var(--navy);font-size:17px;line-height:1.5}
+.benefits li:before{content:"";position:absolute;left:0;top:9px;width:6px;height:6px;background:var(--navy);border-radius:50%}
+.segments{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:28px}
+.segment{border:1px solid var(--border);border-radius:8px;padding:18px 16px;text-align:center;color:var(--navy);font-weight:500;background:#fff}
+.cta-final{background:var(--bg);border:1px solid var(--border);border-radius:12px;padding:56px 32px;text-align:center}
+.cta-final h2{margin-bottom:12px}
+.cta-final p{max-width:540px;margin:0 auto 24px;color:var(--gray)}
+footer{padding:40px 0;text-align:center;font-size:14px;color:var(--muted)}
+@media(max-width:860px){section{padding:64px 0}.hero{padding:72px 0 64px}.steps{gap:32px}}
+@media(max-width:640px){body{font-size:16px}section{padding:48px 0}.hero .sub{font-size:18px}.problema-text{font-size:18px}.steps{grid-template-columns:1fr}.benefits{grid-template-columns:1fr;gap:14px}.segments{grid-template-columns:repeat(2,1fr)}.cta-final{padding:40px 24px}}
+@media(max-width:420px){.segments{grid-template-columns:1fr}.header-inner{flex-direction:column;align-items:flex-start}}
+</style>
+</head>
+<body>
+<header>
+  <div class="container header-inner">
+    <div class="logo">Spiral Codes</div>
+    <a class="nav-link" href="mailto:contato@spiralcodes.com.br">contato@spiralcodes.com.br</a>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="container">
+      <h1>Reduza a latência entre operação e decisão</h1>
+      <p class="sub">Mapeamos onde o tempo entre evento físico e registro financeiro vira custo não faturado em portos, ferrovias e centros de distribuição.</p>
+      <a href="mailto:contato@spiralcodes.com.br?subject=Conversa%20t%C3%A9cnica%20de%2015%20min" class="btn">Agendar conversa técnica de 15 min</a>
+    </div>
+  </section>
+
+  <section id="problema">
+    <div class="container">
+      <h2>O problema</h2>
+      <p class="problema-text">Em operações complexas, o evento acontece no pátio. O registro chega horas depois na planilha. Entre um e outro, decisões são tomadas sem dado completo. Essa latência gera remanejo não faturado, janela perdida e horas extras que não aparecem no indicador correto.</p>
+    </div>
+  </section>
+
+  <section id="como">
+    <div class="container">
+      <h2>Como funciona</h2>
+      <div class="steps">
+        <div class="step">
+          <div class="step-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M9 13h6M9 17h3"/></svg>
+          </div>
+          <h3>1. Entrada dos dados</h3>
+          <p>dados preparados pelo cliente, sem integração obrigatória</p>
+        </div>
+        <div class="step">
+          <div class="step-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/><circle cx="7" cy="7" r="1.5" fill="currentColor" stroke="none"/><circle cx="7" cy="12" r="1.5" fill="currentColor" stroke="none"/><circle cx="7" cy="17" r="1.5" fill="currentColor" stroke="none"/></svg>
+          </div>
+          <h3>2. Organização pelo Ledger</h3>
+          <p>reconciliação físico-financeira por turno</p>
+        </div>
+        <div class="step">
+          <div class="step-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7-11-7-11-7z"/><circle cx="12" cy="12" r="3"/></svg>
+          </div>
+          <h3>3. Visualização no Vision</h3>
+          <p>onde e quando a latência ocorre</p>
+        </div>
+        <div class="step">
+          <div class="step-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h8"/><path d="M14 2v6h6"/><path d="m16 15 2 2 4-4"/></svg>
+          </div>
+          <h3>4. Discussão técnica</h3>
+          <p>laudo de 20 dias com baseline assinado</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="beneficios">
+    <div class="container">
+      <h2>Benefícios</h2>
+      <ul class="benefits">
+        <li>Visibilidade do intervalo entre fato e registro</li>
+        <li>Priorização por impacto financeiro</li>
+        <li>Investigação compartilhada com Operações e Finanças</li>
+        <li>Tomada de decisão com baseline auditável</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="segmentos">
+    <div class="container">
+      <h2>Onde atuamos</h2>
+      <div class="segments">
+        <div class="segment">Portos</div>
+        <div class="segment">Logística</div>
+        <div class="segment">Centros de Distribuição</div>
+        <div class="segment">Ferrovias</div>
+        <div class="segment">Operadores Logísticos</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="seguranca">
+    <div class="container">
+      <h2>Segurança e governança</h2>
+      <p style="max-width:720px">LGPD. Dados fornecidos e validados pelo cliente. Sem integração obrigatória com ERP ou WMS. Projeto conduzido em conjunto com Operações e Finanças. Ambiente isolado por cliente.</p>
+    </div>
+  </section>
+
+  <section id="cta" style="border-bottom:none">
+    <div class="container">
+      <div class="cta-final">
+        <h2>Conversa técnica de 15 minutos</h2>
+        <p>Sem demonstração de produto. Apenas validação de hipótese operacional com base em dados públicos da sua operação.</p>
+        <a href="mailto:contato@spiralcodes.com.br?subject=Agendar%20conversa%20-%20Spiral%20Codes" class="btn">Agendar conversa</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container">Spiral Codes © 2026 — Confidencial</div>
+</footer>
+<script>(function(){document.addEventListener("click",function(e){var a=e.target.closest("[data-product-id]");if(!a)return;e.preventDefault();var pid=a.getAttribute("data-product-id");if(pid)parent.postMessage({type:"ecto-artifact-link-click",productId:pid},"*")})})();</script>
+</body>
+</html>
